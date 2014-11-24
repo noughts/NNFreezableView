@@ -1,0 +1,1 @@
+`pod "NNFreezableView", :git => 'https://github.com/noughts/NNFreezableView'`
