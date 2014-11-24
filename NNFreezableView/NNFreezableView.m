@@ -16,11 +16,15 @@
 
 
 -(void)freeze{
+	[self freezeAfterScreenUpdates:NO];
+}
+
+-(void)freezeAfterScreenUpdates:(BOOL)afterScreenUpdates{
 	if( _freezed ){
 		return;
 	}
 	_content_view = self.subviews.firstObject;
-	_snapshot_view = [_content_view snapshotViewAfterScreenUpdates:YES];
+	_snapshot_view = [_content_view snapshotViewAfterScreenUpdates:afterScreenUpdates];
 	_content_view.hidden = YES;
 	[self addSubview:_snapshot_view];
 	_freezed = YES;

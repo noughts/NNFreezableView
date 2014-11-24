@@ -20,7 +20,7 @@
 
 
 -(IBAction)freeze:(id)sender{
-	[_freezableView freeze];
+	[_freezableView freezeAfterScreenUpdates:NO];
 }
 -(IBAction)unfreeze:(id)sender{
 	[_freezableView unfreeze];

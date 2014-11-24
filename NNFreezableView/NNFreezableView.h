@@ -11,6 +11,7 @@
 @interface NNFreezableView : UIView
 
 -(void)freeze;
+-(void)freezeAfterScreenUpdates:(BOOL)afterScreenUpdates;
 -(void)unfreeze;
 
 @end
